@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Генератор Коктейльного Меню</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #fafafa;
+        color: #222;
+        line-height: 1.6;
+    }
+
+    header {
+        padding: 80px 20px;
+        text-align: center;
+        background: url('https://images.unsplash.com/photo-1516455590571-18256e5bb9ff?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
+        color: white;
+    }
+
+    header h1 {
+        font-size: 48px;
+        margin-bottom: 10px;
+        text-shadow: 0 0 8px rgba(0,0,0,0.6);
+    }
+
+    header p {
+        font-size: 20px;
+        max-width: 600px;
+        margin: 0 auto 30px;
+        text-shadow: 0 0 6px rgba(0,0,0,0.5);
+    }
+
+    .btn {
+        background: #ff4d4d;
+        color: white;
+        padding: 14px 28px;
+        border-radius: 6px;
+        text-decoration: none;
+        font-size: 18px;
+        display: inline-block;
+        transition: 0.3s;
+    }
+
+    .btn:hover {
+        background: #e63b3b;
+    }
+
+    section {
+        padding: 60px 20px;
+        max-width: 900px;
+        margin: auto;
+    }
+
+    h2 {
+        text-align: center;
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+
+    .features {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 20px;
+        margin-top: 30px;
+    }
+
+    .box {
+        padding: 20px;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+
+    .steps {
+        padding-left: 0;
+        list-style: none;
+    }
+
+    .steps li {
+        background: white;
+        margin-bottom: 12px;
+        padding: 12px 16px;
+        border-radius: 6px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    .faq-item {
+        margin-bottom: 20px;
+    }
+
+    footer {
+        text-align: center;
+        padding: 30px;
+        background: #333;
+        color: white;
+        margin-top: 40px;
+    }
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<header>
+    <h1>Створюй коктейльне меню за 30 секунд</h1>
+    <p>Генератор коктейлів для барів, ресторанів та приватних вечірок.  
+    Оберіть інгредієнти — отримайте готові рецепти!</p>
+
+    <a href="#start" class="btn">Почати створювати меню</a>
+</header>
+
+<!-- PROBLEM -->
+<section>
+    <h2>Чому це потрібно?</h2>
+    <div class="features">
+        <div class="box">Бармени витрачають багато часу на пошук рецептів</div>
+        <div class="box">Не всі інгредієнти доступні під час вечірки</div>
+        <div class="box">Створення меню — довгий і складний процес</div>
+    </div>
+</section>
+
+<!-- ADVANTAGES -->
+<section>
+    <h2>Переваги сервісу</h2>
+    <div class="features">
+        <div class="box">⚡ Миттєва генерація меню</div>
+        <div class="box">🍓 Оберіть свої інгредієнти і отримайте доступні коктейлі</div>
+        <div class="box">📱 Працює на будь-якому пристрої</div>
+        <div class="box">🍹 Професійні рецепти з пропорціями</div>
+    </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section id="start">
+    <h2>Як це працює?</h2>
+    <ul class="steps">
+        <li>1️⃣ Оберіть доступні інгредієнти</li>
+        <li>2️⃣ Отримайте коктейлі, які можна створити</li>
+        <li>3️⃣ Зберіть меню або список напоїв</li>
+    </ul>
+
+    <a class="btn" href="#">Запустити генератор</a>
+</section>
+
+<!-- FAQ -->
+<section>
+    <h2>FAQ</h2>
+    <div class="faq-item">
+        <strong>Які інгредієнти підтримуються?</strong>
+        <p>Усі популярні алкогольні та безалкогольні інгредієнти, фрукти, сиропи, спеції.</p>
+    </div>
+
+    <div class="faq-item">
+        <strong>Чи можна використовувати сервіс у кафе чи ресторані?</strong>
+        <p>Так, генератор підходить для комерційного використання.</p>
+    </div>
+
+    <div class="faq-item">
+        <strong>Чи потрібна реєстрація?</strong>
+        <p>Ні, у базовій версії — не потрібна.</p>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section>
+    <h2>Підключити PRO-версію</h2>
+    <p style="text-align:center;">Отримайте брендування, експорт у PDF, фото коктейлів та розширений список рецептів.</p>
+
+    <form style="max-width:400px;margin:20px auto;text-align:center;">
+        <input type="text" placeholder="Ваше ім'я" style="width:100%;padding:10px;margin-bottom:10px;">
+        <input type="email" placeholder="Email" style="width:100%;padding:10px;margin-bottom:10px;">
+        <button class="btn" style="width:100%;">Надіслати заявку</button>
+    </form>
+</section>
+
+<footer>
+    © 2025 Генератор коктейльного меню. Усі права захищено.
+</footer>
+
+</body>
+</html>
